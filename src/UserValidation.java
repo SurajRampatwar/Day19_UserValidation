@@ -18,7 +18,7 @@ public class UserValidation {
         String regex2 = "^[0-9]{2}+[6-9][0-9]{9}";
         System.out.println("Enter Your Password");
         String pass = scan.next();
-        String regex3 = "^[a-z]{8,}";
+        String regex3 = "^[A-Z][a-z]{7,}";
         boolean fName = firstName.matches(regex);
         boolean lName = lastName.matches(regex);
         boolean email = emailId.matches(regex1);
