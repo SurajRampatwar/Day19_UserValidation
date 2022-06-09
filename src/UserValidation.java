@@ -15,10 +15,10 @@ public class UserValidation {
         String regex1 = "^abc(.+)[a-z]*@bl(.)co(.)+[a-z]$";
         System.out.println("Enter Mobile Number");
         String mobileNo = scan.next();
-        String regex2 = "^[0-9]{2}+[6-9][0-9]{9}";
+        String regex2 = "^[0-9]{2}+[6-9][0-9]{9}$";
         System.out.println("Enter Your Password");
         String pass = scan.next();
-        String regex3 = "^[A-Z][a-z]{7,}";
+        String regex3 = "^[A-Z]+[a-z]{8,}[0-9]$";
         boolean fName = firstName.matches(regex);
         boolean lName = lastName.matches(regex);
         boolean email = emailId.matches(regex1);
