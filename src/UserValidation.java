@@ -16,13 +16,18 @@ public class UserValidation {
         System.out.println("Enter Mobile Number");
         String mobileNo = scan.next();
         String regex2 = "^[0-9]{2}+[6-9][0-9]{9}";
+        System.out.println("Enter Your Password");
+        String pass = scan.next();
+        String regex3 = "^[a-z]{8,}";
         boolean fName = firstName.matches(regex);
         boolean lName = lastName.matches(regex);
         boolean email = emailId.matches(regex1);
         boolean mobile = mobileNo.matches(regex2);
+        boolean password = pass.matches(regex3);
         System.out.println(fName);
         System.out.println(lName);
         System.out.println(email);
         System.out.println(mobile);
+        System.out.println(password);
     }
 }
