@@ -9,21 +9,23 @@ public class UserValidation {
         String firstName = scan.next();
         System.out.println("Enter Last Name");
         String lastName = scan.next();
-        String regex = "^[A-Z][a-z]{3,}$";
+        String name = "^[A-Z][a-z]{3,}$";
         System.out.println("Enter Email Id");
         String emailId = scan.next();
-        String regex1 = "^abc(.+)[a-z]*@bl(.)co(.)+[a-z]$";
+        String emails = "^abc(.+)[a-z]*@bl(.)co(.)+[a-z]$";
         System.out.println("Enter Mobile Number");
         String mobileNo = scan.next();
-        String regex2 = "^[0-9]{2}+[6-9][0-9]{9}$";
+        String mobileNum = "^[0-9]{2}+[6-9][0-9]{9}$";
         System.out.println("Enter Your Password");
         String pass = scan.next();
-        String regex3 = "^[A-Z]+[a-z]{8,}[0-9][$&+,:;=?@#|'<>.-^*()%!]$";
-        boolean fName = firstName.matches(regex);
-        boolean lName = lastName.matches(regex);
-        boolean email = emailId.matches(regex1);
-        boolean mobile = mobileNo.matches(regex2);
-        boolean password = pass.matches(regex3);
+        String passwords = "^[A-Z]+[a-zA-Z0-9-.]{7,}[0-9]+[$&+,:;=?@#|'<>.-^*()%!]+[a-zA-Z0-9]*$";
+
+        boolean fName = firstName.matches(name);
+        boolean lName = lastName.matches(name);
+        boolean email = emails.matches(emails);
+        boolean mobile = mobileNo.matches(mobileNum);
+        boolean password = pass.matches(passwords);
+
         System.out.println(fName);
         System.out.println(lName);
         System.out.println(email);
